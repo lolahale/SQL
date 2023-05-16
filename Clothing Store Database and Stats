@@ -1,0 +1,9 @@
+CREATE TABLE store (id INTEGER PRIMARY KEY, name TEXT, quantity INTEGER, price INTEGER, color TEXT);
+INSERT INTO store VALUES (1, "Shirt", 8, 15.99, "blue"); 
+INSERT INTO store VALUES (2, "Underwear", 3, 4.99, "pink");
+INSERT INTO store VALUES (3, "Pants", 20, 59.99, "navy");
+INSERT INTO store VALUES (4, "Bra", 1, 11.11, "black");
+INSERT INTO store VALUES (5, "Jacket", 12, 34.00, "gray");
+SELECT * FROM store;
+SELECT * FROM store ORDER BY price; 
+SELECT MAX(quantity) FROM store; 
